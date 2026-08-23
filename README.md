@@ -1,91 +1,43 @@
 # Sintagmatarches
 
-Data Analyst · Applied AI · Python · SQL · Power BI
+Data · BI · Analytics Engineering · Machine Learning · Applied AI
 
-I build analytical projects and working data products: from data preparation and exploratory analysis to machine-learning models, reports, and interactive applications.
+I build reproducible analytical projects and working data products—from acquisition and transformation to explicit metrics, evaluated models and public interfaces.
 
-## Core Skills
+## Selected projects
 
-- Python
-- SQL and BigQuery
-- Power BI and Power Query
-- Excel
-- Data analysis and visualization
-- Machine learning
-- Statistical analysis
-- Git and GitHub
+### EU Tender Intelligence Agent
 
-## Projects
+Official TED Search API ingestion, structured procurement and lot processing, deterministic supplier qualification, version/change intelligence, and evidence-linked decisions. The local runtime adds hybrid retrieval, embeddings, bounded tool calling and a claim/evidence gate, with adversarial tests for prompt injection and forged evidence.
+
+[Live application](https://applied-ai-lab.smjlw.chatgpt.site/eu-tender-intelligence-agent) · [Source and technical evidence](https://github.com/Sintagmatarches/applied-ai-lab#eu-tender-intelligence-agent) · [Evaluation](https://github.com/Sintagmatarches/applied-ai-lab/blob/main/docs/tender-ai-evaluation.md)
+
+The public Cloudflare app provides live TED discovery and deterministic assessment. Docker and Azure Terraform are supplied for the private runtime; the repository does not claim that Azure deployment has been completed.
+
+### Finland Rail Monitoring System
+
+Live and historical monitoring built from official Digitraffic data, with regional geospatial analytics and an executable PySpark / Delta Lake Bronze–Silver–Gold pipeline. Incremental watermarks, idempotent reruns, recovery paths, quality gates and contracts are covered by automated tests.
+
+The committed 1 Aug 2025–31 Jul 2026 snapshot contains **403,054** modelled passenger journeys; **95.81%** of completed final arrivals were within five minutes.
+
+[Live monitor](https://applied-ai-lab.smjlw.chatgpt.site/finland-rail-reliability-monitor) · [Source and methodology](https://github.com/Sintagmatarches/applied-ai-lab#finland-rail-monitoring-system) · [Data-platform evidence](https://github.com/Sintagmatarches/applied-ai-lab/blob/main/docs/rail/data-platform.md)
+
+Power BI / DAX assets and Fabric delivery instructions are prepared; publishing to a user-owned Fabric workspace remains a credentialed manual step.
 
 ### Olist Delivery Delay Predictor
 
-A working machine-learning application that ranks the risk of an order arriving at least 24 hours after the promised delivery date.
+A server-side relative risk scorer trained with leakage-safe point-in-time features, chronological validation and comparison of logistic regression, XGBoost, CatBoost and blends. Portable TypeScript inference is tested against the Python reference.
 
-The project includes:
+On the 14,471-order final benchmark, the deployed logistic baseline achieved **6.32% PR-AUC**, **63.44% ROC-AUC**, and found **107 of 620** late orders in the highest-risk 10% (7.4% precision). The result is intentionally reported as modest ranking performance, not a calibrated probability claim.
 
-- data validation and preparation in Python;
-- leakage-aware historical features;
-- chronological model validation;
-- comparison of logistic regression, XGBoost, and CatBoost;
-- server-side model inference;
-- input validation and automated tests;
-- an interactive web interface.
+[Live predictor](https://applied-ai-lab.smjlw.chatgpt.site/olist-delivery-delay-predictor) · [Source and evaluation](https://github.com/Sintagmatarches/applied-ai-lab#olist-delivery-delay-predictor) · [Model card](https://github.com/Sintagmatarches/applied-ai-lab/blob/main/artifacts/model-card.md)
 
-The dataset contains 95,195 orders from September 2016 through August 2018.
+## Working stack
 
-The final model achieved:
+Python · SQL · Power BI / Power Query / DAX · PySpark · Delta Lake · data quality and contracts · classical ML · RAG / retrieval · agent tool calling · Docker · GitHub Actions · Terraform
 
-- PR-AUC: 9.90%;
-- ROC-AUC: 72.49%;
-- 170 of 620 late orders identified in the highest-risk 10%;
-- 11.90% precision in the highest-risk 10%.
+## More work
 
-[Live application](https://applied-ai-lab.smjlw.chatgpt.site/olist-delivery-delay-predictor)
-
-[Source code](https://github.com/Sintagmatarches/applied-ai-lab)
-
-### Olist Delivery Reliability and Customer Reviews
-
-An analytical case study examining delivery reliability, customer reviews, regional routes, and the stages where delays accumulate.
-
-The report focuses on:
-
-- late-delivery rates;
-- delivery routes and locations;
-- relationships between delays and review scores;
-- operational bottlenecks;
-- practical recommendations based on the analysis.
-
-[Open report](https://sintagmatarches.github.io/portfolio/assets/olist-delivery-reliability-v2.pdf?v=20260803)
-
-### Estonia County Economic Livability
-
-A comparative analysis of economic living conditions across all 15 Estonian counties.
-
-The project combines:
-
-- income data;
-- housing affordability;
-- rental and utility costs;
-- labour-market conditions;
-- county-level comparisons;
-- Power BI visualizations and geographic data.
-
-[Open report](https://sintagmatarches.github.io/portfolio/assets/estonia-county-economic-livability-v1.pdf?v=20260803)
-
-## Current Focus
-
-I am currently developing my skills in:
-
-- advanced Python and SQL;
-- machine-learning model development;
-- data modelling;
-- Power BI and Microsoft Fabric;
-- deployment of analytical applications;
-- end-to-end data-product development.
-
-## Portfolio
-
-My portfolio contains analytical reports, machine-learning applications, and data visualizations.
-
-[Open portfolio](https://sintagmatarches.github.io/portfolio/?v=20260803)
+- [Portfolio](https://sintagmatarches.github.io/portfolio/?v=20260823-current-projects-v1) — live projects, analytical reports and visualizations.
+- [Olist Delivery Reliability report](https://sintagmatarches.github.io/portfolio/assets/olist-delivery-reliability-v2.pdf?v=20260823-current-projects-v1) — SQL / Power BI delivery analysis.
+- [Estonia County Economic Livability report](https://sintagmatarches.github.io/portfolio/assets/estonia-county-economic-livability-v1.pdf?v=20260823-current-projects-v1) — county-level affordability and labour-market analysis.
