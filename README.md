@@ -1,10 +1,18 @@
 # Sintagmatarches
 
-Data · BI · Analytics Engineering · Machine Learning · Applied AI
+Data · BI · Analytics Engineering · Machine Learning · Computer Vision · Geospatial AI · Applied AI
 
 I build reproducible analytical projects and working data products—from acquisition and transformation to explicit metrics, evaluated models and public interfaces.
 
 ## Selected projects
+
+### Finland Geospatial AI
+
+PyTorch semantic segmentation of real Finnish Sentinel-2 Level-2A imagery aligned to ESA WorldCover 2021 at 10 m. The reproducible raster pipeline uses explicit CRS/resampling, train-only normalization and a geographically separated Helsinki + Lahti train / Tampere validation / Oulu test split with automated leakage checks.
+
+The selected compact U-Net achieved **0.3982 mIoU** and **0.4743 macro Dice** on the once-evaluated 315-patch Oulu test. NIR improved validation mIoU from 0.4037 to 0.4512; a TinyDeepLab alternative underperformed. Temperature scaling worsened held-out ECE and is reported as a negative result. Real MLflow runs, deterministic error/uncertainty analysis, a 1.9 MB model artifact, CPU GeoTIFF inference, Docker and CI are included.
+
+[Source and visual evidence](https://github.com/Sintagmatarches/finland-geospatial-ai) · [Experiment report](https://github.com/Sintagmatarches/finland-geospatial-ai/blob/main/reports/experiment-report.md) · [Model card](https://github.com/Sintagmatarches/finland-geospatial-ai/blob/main/reports/model-card.md)
 
 ### EU Tender Intelligence Agent
 
@@ -34,10 +42,10 @@ On the 14,471-order final benchmark, the deployed logistic baseline achieved **6
 
 ## Working stack
 
-Python · SQL · Power BI / Power Query / DAX · PySpark · Delta Lake · data quality and contracts · classical ML · RAG / retrieval · agent tool calling · Docker · GitHub Actions · Terraform
+Python · SQL · Power BI / Power Query / DAX · PyTorch · computer vision · semantic segmentation · remote sensing / geospatial ML · MLflow · PySpark · Delta Lake · data quality and contracts · classical ML · RAG / retrieval · agent tool calling · Docker · GitHub Actions · Terraform
 
 ## More work
 
-- [Portfolio](https://sintagmatarches.github.io/portfolio/?v=20260823-current-projects-v1) — live projects, analytical reports and visualizations.
-- [Olist Delivery Reliability report](https://sintagmatarches.github.io/portfolio/assets/olist-delivery-reliability-v2.pdf?v=20260823-current-projects-v1) — SQL / Power BI delivery analysis.
-- [Estonia County Economic Livability report](https://sintagmatarches.github.io/portfolio/assets/estonia-county-economic-livability-v1.pdf?v=20260823-current-projects-v1) — county-level affordability and labour-market analysis.
+- [Portfolio](https://sintagmatarches.github.io/portfolio/?v=20260828-geospatial-ai-v1) — live projects, analytical reports and visualizations.
+- [Olist Delivery Reliability report](https://sintagmatarches.github.io/portfolio/assets/olist-delivery-reliability-v2.pdf?v=20260828-geospatial-ai-v1) — SQL / Power BI delivery analysis.
+- [Estonia County Economic Livability report](https://sintagmatarches.github.io/portfolio/assets/estonia-county-economic-livability-v1.pdf?v=20260828-geospatial-ai-v1) — county-level affordability and labour-market analysis.
