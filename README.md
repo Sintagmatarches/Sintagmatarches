@@ -6,6 +6,14 @@ I build reproducible analytical projects and working data products—from acquis
 
 ## Selected projects
 
+### Helsinki Water — Forecasting + Optimization
+
+Reproducible decision-science study of 864 monthly Nuuka water-meter observations across eight Helsinki public properties. Expanding backtests selected ETS before the sealed 2018 evaluation: **0.793 property MASE**, with **97.92% empirical coverage** for nominal 90% conformal intervals.
+
+The negative findings are explicit: SARIMA had lower holdout property MASE, the intervals were over-conservative, and base inspection optimization added **0%** because all three candidates fit. OR-Tools CP-SAT produced a **14.59% expected-value gain** only under the binding eight-hour scenario. Statistical signals are not confirmed leaks; scenario value is not realized savings.
+
+[Source and visual evidence](https://github.com/Sintagmatarches/helsinki-water-forecasting-optimization) · [Scientific report](https://github.com/Sintagmatarches/helsinki-water-forecasting-optimization/blob/main/reports/scientific-report.md) · [Versioned metrics](https://github.com/Sintagmatarches/helsinki-water-forecasting-optimization/blob/main/artifacts/v1.0.0/metrics.json)
+
 ### Finland Geospatial AI
 
 PyTorch semantic segmentation of real Finnish Sentinel-2 Level-2A imagery aligned to ESA WorldCover 2021 at 10 m. The reproducible raster pipeline uses explicit CRS/resampling, train-only normalization and a geographically separated Helsinki + Lahti train / Tampere validation / Oulu test split with automated leakage checks.
@@ -42,10 +50,10 @@ On the 14,471-order final benchmark, the deployed logistic baseline achieved **6
 
 ## Working stack
 
-Python · SQL · Power BI / Power Query / DAX · PyTorch · computer vision · semantic segmentation · remote sensing / geospatial ML · MLflow · PySpark · Delta Lake · data quality and contracts · classical ML · RAG / retrieval · agent tool calling · Docker · GitHub Actions · Terraform
+Python · SQL · Power BI / Power Query / DAX · PyTorch · computer vision · semantic segmentation · remote sensing / geospatial ML · MLflow · PySpark · Delta Lake · data quality and contracts · classical ML · time-series forecasting · conformal intervals · OR-Tools / CP-SAT · RAG / retrieval · agent tool calling · Docker · GitHub Actions · Terraform
 
 ## More work
 
-- [Portfolio](https://sintagmatarches.github.io/portfolio/?v=20260828-geospatial-ai-v1) — live projects, analytical reports and visualizations.
-- [Olist Delivery Reliability report](https://sintagmatarches.github.io/portfolio/assets/olist-delivery-reliability-v2.pdf?v=20260828-geospatial-ai-v1) — SQL / Power BI delivery analysis.
-- [Estonia County Economic Livability report](https://sintagmatarches.github.io/portfolio/assets/estonia-county-economic-livability-v1.pdf?v=20260828-geospatial-ai-v1) — county-level affordability and labour-market analysis.
+- [Portfolio](https://sintagmatarches.github.io/portfolio/?v=20260905-portfolio-quality-v1) — live projects, analytical reports and visualizations.
+- [Olist Delivery Reliability report](https://sintagmatarches.github.io/portfolio/assets/olist-delivery-reliability-v2.pdf?v=20260905-portfolio-quality-v1) — SQL / Power BI delivery analysis.
+- [Estonia County Economic Livability report](https://sintagmatarches.github.io/portfolio/assets/estonia-county-economic-livability-v1.pdf?v=20260905-portfolio-quality-v1) — county-level affordability and labour-market analysis.
