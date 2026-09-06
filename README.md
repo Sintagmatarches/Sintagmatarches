@@ -17,16 +17,16 @@ The negative findings are explicit: SARIMA had lower holdout property MASE, the 
 ### Finland Geospatial AI
 
 Native-resolution PyTorch segmentation of official National Land Survey of Finland RGB orthophotos
-with Topographic Database vector supervision. The v2 dataset contains 576 real 256×256 patches at
+with Topographic Database vector supervision. The v2 dataset contains 576 256×256 patches at
 0.5 m in EPSG:3067, split across five map sheets with 512 m buffers, exact raster/vector alignment,
 content hashes and automated spatial-leakage checks.
 
-Three real MLflow runs compared two U-Nets with a pretrained SegFormer-B0. Validation-only selection
-chose SegFormer at 0.7344 mIoU; its single hash-locked 96-patch test produced **0.6652 mIoU** and
-**0.7742 macro Dice**. Water reached 0.9636 IoU, while open-natural land reached 0.3300. Boundary,
-visual error, calibration and risk-coverage evidence accompany strict CPU GeoTIFF inference, Docker
-and CI. The immutable Sentinel-2 / WorldCover v1 remains published at **0.3982 mIoU** and **0.4743
-macro Dice**; the two tracks are not directly equivalent benchmarks.
+MLflow records two U-Net runs and a pretrained SegFormer-B0 run. Validation-only selection chose
+SegFormer at 0.7344 mIoU; its single hash-locked 96-patch test produced **0.6652 mIoU** and **0.7742
+macro Dice**. Water reached 0.9636 IoU, while open-natural land reached 0.3300. The repository includes
+boundary and visual error analysis, calibration and risk-coverage plots, strict CPU GeoTIFF inference,
+Docker and CI. The older Sentinel-2 / WorldCover v1 is unchanged at **0.3982 mIoU** and **0.4743 macro
+Dice**. The two tracks use different data and class definitions, so their scores cannot be compared directly.
 
 [Source and visual evidence](https://github.com/Sintagmatarches/finland-geospatial-ai) · [NLS v2 experiment report](https://github.com/Sintagmatarches/finland-geospatial-ai/blob/main/reports/v2/generated/experiment-report.md) · [NLS v2 model card](https://github.com/Sintagmatarches/finland-geospatial-ai/blob/main/reports/v2/model-card.md)
 
@@ -62,6 +62,6 @@ Python · SQL · Power BI / Power Query / DAX · PyTorch · computer vision · s
 
 ## More work
 
-- [Portfolio](https://sintagmatarches.github.io/portfolio/?v=20260906-nls-v2) — live projects, analytical reports and visualizations.
-- [Olist Delivery Reliability report](https://sintagmatarches.github.io/portfolio/assets/olist-delivery-reliability-v2.pdf?v=20260906-nls-v2) — SQL / Power BI delivery analysis.
-- [Estonia County Economic Livability report](https://sintagmatarches.github.io/portfolio/assets/estonia-county-economic-livability-v1.pdf?v=20260906-nls-v2) — county-level affordability and labour-market analysis.
+- [Portfolio](https://sintagmatarches.github.io/portfolio/?v=20260906-nls-v2-style) — live projects, analytical reports and visualizations.
+- [Olist Delivery Reliability report](https://sintagmatarches.github.io/portfolio/assets/olist-delivery-reliability-v2.pdf?v=20260906-nls-v2-style) — SQL / Power BI delivery analysis.
+- [Estonia County Economic Livability report](https://sintagmatarches.github.io/portfolio/assets/estonia-county-economic-livability-v1.pdf?v=20260906-nls-v2-style) — county-level affordability and labour-market analysis.
