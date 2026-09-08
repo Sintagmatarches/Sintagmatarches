@@ -62,6 +62,6 @@ Python · SQL · Power BI / Power Query / DAX · PyTorch · computer vision · s
 
 ## More work
 
-- [Portfolio](https://sintagmatarches.github.io/portfolio/?v=20260906-nls-v2-style) — live projects, analytical reports and visualizations.
-- [Olist Delivery Reliability report](https://sintagmatarches.github.io/portfolio/assets/olist-delivery-reliability-v2.pdf?v=20260906-nls-v2-style) — SQL / Power BI delivery analysis.
-- [Estonia County Economic Livability report](https://sintagmatarches.github.io/portfolio/assets/estonia-county-economic-livability-v1.pdf?v=20260906-nls-v2-style) — county-level affordability and labour-market analysis.
+- [Portfolio](https://sintagmatarches.github.io/portfolio/?v=20260908-certificates) — live projects, analytical reports, visualizations and certificates.
+- [Olist Delivery Reliability report](https://sintagmatarches.github.io/portfolio/assets/olist-delivery-reliability-v2.pdf?v=20260908-certificates) — SQL / Power BI delivery analysis.
+- [Estonia County Economic Livability report](https://sintagmatarches.github.io/portfolio/assets/estonia-county-economic-livability-v1.pdf?v=20260908-certificates) — county-level affordability and labour-market analysis.
