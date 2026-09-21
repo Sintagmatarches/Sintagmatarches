@@ -1,8 +1,8 @@
 # Sintagmatarches
 
-Data · BI · Analytics Engineering · Machine Learning · Computer Vision · Geospatial AI · Applied AI
+**Junior Data / AI / ML Engineer**
 
-I build reproducible analytical projects and working data products—from acquisition and transformation to explicit metrics, evaluated models and public interfaces.
+I build reproducible data and ML systems—from acquisition and transformation to explicit contracts, evaluated models, tested APIs and observable deployment designs.
 
 ## Selected projects
 
@@ -28,13 +28,13 @@ boundary and visual error analysis, calibration and risk-coverage plots, strict 
 Docker and CI. The older Sentinel-2 / WorldCover v1 is unchanged at **0.3982 mIoU** and **0.4743 macro
 Dice**. The two tracks use different data and class definitions, so their scores cannot be compared directly.
 
-[Source and visual evidence](https://github.com/Sintagmatarches/finland-geospatial-ai) · [NLS v2 experiment report](https://github.com/Sintagmatarches/finland-geospatial-ai/blob/main/reports/v2/generated/experiment-report.md) · [NLS v2 model card](https://github.com/Sintagmatarches/finland-geospatial-ai/blob/main/reports/v2/model-card.md)
+[Source and visual evidence](https://github.com/Sintagmatarches/finland-geospatial-ai) · [NLS v2 experiment report](https://github.com/Sintagmatarches/finland-geospatial-ai/blob/main/reports/v2/generated/experiment-report.md) · [Inference operations](https://github.com/Sintagmatarches/finland-geospatial-ai/blob/main/reports/inference-operations.md)
 
 ### EU Tender Intelligence Agent
 
 Official TED Search API ingestion, structured procurement and lot processing, deterministic supplier qualification, version/change intelligence, and evidence-linked decisions. The local runtime adds hybrid retrieval, embeddings, bounded tool calling and a claim/evidence gate, with adversarial tests for prompt injection and forged evidence.
 
-[Live application](https://applied-ai-lab.smjlw.chatgpt.site/eu-tender-intelligence-agent) · [Source and technical evidence](https://github.com/Sintagmatarches/applied-ai-lab#eu-tender-intelligence-agent) · [Evaluation](https://github.com/Sintagmatarches/applied-ai-lab/blob/main/docs/tender-ai-evaluation.md)
+[Live application](https://applied-ai-lab.smjlw.chatgpt.site/eu-tender-intelligence-agent) · [Source and technical evidence](https://github.com/Sintagmatarches/applied-ai-lab#eu-tender-intelligence-agent) · [Operations and SLO proposal](https://github.com/Sintagmatarches/applied-ai-lab/blob/main/docs/tender-ai-operations.md)
 
 The public Cloudflare app provides live TED discovery and deterministic assessment. Docker and Azure Terraform are supplied for the private runtime; the repository does not claim that Azure deployment has been completed.
 
@@ -54,14 +54,14 @@ A server-side relative risk scorer trained with leakage-safe point-in-time featu
 
 On the 14,471-order final benchmark, the deployed logistic baseline achieved **6.32% PR-AUC**, **63.44% ROC-AUC**, and found **107 of 620** late orders in the highest-risk 10% (7.4% precision). The result is intentionally reported as modest ranking performance, not a calibrated probability claim.
 
-[Live predictor](https://applied-ai-lab.smjlw.chatgpt.site/olist-delivery-delay-predictor) · [Source and evaluation](https://github.com/Sintagmatarches/applied-ai-lab#olist-delivery-delay-predictor) · [Model card](https://github.com/Sintagmatarches/applied-ai-lab/blob/main/artifacts/model-card.md)
+[Live predictor](https://applied-ai-lab.smjlw.chatgpt.site/olist-delivery-delay-predictor) · [Source and evaluation](https://github.com/Sintagmatarches/applied-ai-lab#olist-delivery-delay-predictor) · [Versioned serving contract](https://github.com/Sintagmatarches/applied-ai-lab/blob/main/docs/olist-serving-contract.md)
 
 ## Working stack
 
-Python · SQL · Power BI / Power Query / DAX · PyTorch · computer vision · semantic segmentation · remote sensing / geospatial ML · MLflow · PySpark · Delta Lake · data quality and contracts · classical ML · time-series forecasting · conformal intervals · OR-Tools / CP-SAT · RAG / retrieval · agent tool calling · Docker · GitHub Actions · Terraform
+Python · SQL · PySpark · Delta Lake · Power BI / Power Query / DAX · PyTorch · MLflow · FastAPI · Docker · GitHub Actions · Terraform · Azure-oriented infrastructure · data contracts · RAG / agent systems · time-series ML · computer vision · geospatial ML · OR-Tools / CP-SAT
 
 ## More work
 
-- [Portfolio](https://sintagmatarches.github.io/portfolio/?v=20260908-intro-cleanup) — live projects, analytical reports, visualizations and certificates.
-- [Olist Delivery Reliability report](https://sintagmatarches.github.io/portfolio/assets/olist-delivery-reliability-v2.pdf?v=20260908-intro-cleanup) — SQL / Power BI delivery analysis.
-- [Estonia County Economic Livability report](https://sintagmatarches.github.io/portfolio/assets/estonia-county-economic-livability-v1.pdf?v=20260908-intro-cleanup) — county-level affordability and labour-market analysis.
+- [Portfolio](https://sintagmatarches.github.io/portfolio/?v=20260921-engineering-audit) — live projects, analytical reports, visualizations and certificates.
+- [Olist Delivery Reliability report](https://sintagmatarches.github.io/portfolio/assets/olist-delivery-reliability-v2.pdf?v=20260921-engineering-audit) — SQL / Power BI delivery analysis.
+- [Estonia County Economic Livability report](https://sintagmatarches.github.io/portfolio/assets/estonia-county-economic-livability-v1.pdf?v=20260921-engineering-audit) — county-level affordability and labour-market analysis.
